@@ -1,4 +1,4 @@
-# my Project
+# my Project is the best
 # azure-vm-simple-windows
 # https://docs.microsoft.com/en-us/azure/virtual-machines/windows/ps-template
 # https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-powershell
