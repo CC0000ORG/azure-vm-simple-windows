@@ -8,7 +8,7 @@ None
 
 ## Usage
 
-Run the azuredeploy.ps1 in Azure Powershell 
+Run azuredeploy.ps1 in Azure Powershell 
 
 ## Contributing
 
