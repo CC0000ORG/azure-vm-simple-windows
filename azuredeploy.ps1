@@ -14,7 +14,7 @@ $dnsLabelPrefix = Read-Host -Prompt "Enter an unique DNS name for the public IP"
 New-AzResourceGroup -Name $resourceGroupName -Location "$location"
 New-AzResourceGroupDeployment `
     -ResourceGroupName $resourceGroupName `
-    -TemplateUri "https://raw.githubusercontent.com/CC0001MK/AzureVMDeploy/main/azuredeploy.json?token=ARG3XUJZOC6YEMYDXSHAERS7W75EC" `
+    -TemplateUri "https://raw.githubusercontent.com/CC0001MK/azure-vm-simple-windows/main/azuredeploy.ps1" `
     -adminUsername $adminUsername `
     -adminPassword $adminPassword `
     -dnsLabelPrefix $dnsLabelPrefix
