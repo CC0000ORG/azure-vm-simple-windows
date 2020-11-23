@@ -18,6 +18,7 @@ New-AzResourceGroupDeployment `
     -TemplateUri "https://raw.githubusercontent.com/CC0001MK/azure-vm-simple-windows/main/azuredeploy.json" `
     -adminUsername $adminUsername `
     -adminPassword $adminPassword `
+    -vmName $adminPassword `
     -dnsLabelPrefix $dnsLabelPrefix
 
  (Get-AzVm -ResourceGroupName $resourceGroupName).name
