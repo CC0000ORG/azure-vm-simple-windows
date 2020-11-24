@@ -8,6 +8,7 @@ $resourceGroupName = Read-Host -Prompt "Enter the Resource Group name"
 $location = Read-Host -Prompt "Enter the location (i.e. centralus)"
 $adminUsername = Read-Host -Prompt "Enter the administrator username"
 $adminPassword = Read-Host -Prompt "Enter the administrator password" -AsSecureString
+$vmName = Read-Host -Prompt "Enter the VM name"
 $dnsLabelPrefix = Read-Host -Prompt "Enter an unique DNS name for the public IP"
 
 
@@ -18,7 +19,7 @@ New-AzResourceGroupDeployment `
     -TemplateUri "https://raw.githubusercontent.com/CC0001MK/azure-vm-simple-windows/main/azuredeploy.json" `
     -adminUsername $adminUsername `
     -adminPassword $adminPassword `
-    -vmName $adminPassword `
+    -vmName $vmName `
     -dnsLabelPrefix $dnsLabelPrefix
 
  (Get-AzVm -ResourceGroupName $resourceGroupName).name
